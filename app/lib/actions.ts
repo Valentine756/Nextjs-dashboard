@@ -72,7 +72,10 @@ export const handleCreateInvoiceFormSub = async (
   VALUES (${customerId}, ${amountInCents}, ${status}, ${date})
 `;
   } catch (error) {
-    return { message: "Database Error: Failed to Create Invoice" };
+    return {
+      Error: error,
+      message: "Database Error: Failed to Create Invoice",
+    };
   }
 
   revalidatePath("/dashboard/invoices");

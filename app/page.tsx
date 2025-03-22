@@ -3,7 +3,7 @@ import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Image from "next/image";
 import hd from "@/public/hero-desktop.png";
-import hm from "@/public/hero-mobile.png";
+// import hm from "@/public/hero-mobile.png";
 
 export default function Page() {
   return (
